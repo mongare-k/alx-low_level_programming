@@ -16,19 +16,22 @@ int main(void)
 
 	for (a = '0'; b < '9'; a++)
 	{
-		for (c = b + 1; c <= '9'; c++)
+		for (b = '1'; b < '9'; b++)
 		{
-			if (c > b && b > a)
+			for (c = '2'; c < '9'; c++)
 			{
-				putchar(a);
-				putchar(b);
-				putchar(c);
-
-				if (a != '7' || b != '8')
+				if (c > b && b > a)
 				{
+					putchar(a);
+					putchar(b);
+					putchar(c);
+
+					if (a != '7' || b != '8')
+					{
 
 					putchar(',');
 					putchar(' ');
+					}
 				}
 			}
 		}
