@@ -5,7 +5,7 @@
  * @c: the character to be checked
  * Return: 1 if c is a letter, 0 otherwise
  */
-int_isalpha(int c)
+int _isalpha(int c)
 {
 	char lower, upper;
 	int isletter = 0;
