@@ -6,7 +6,7 @@
  * @ac: the argument count
  * @av: the argument vector
  *
- * Return: If function fails - NULL, otherwise - a pointer to the string.
+ * Return: If ac == 0, av == null or If function fails - NULL, otherwise - a pointer to the string.
  */
 char *argstostr(int ac, char **av)
 {
