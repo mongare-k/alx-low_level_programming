@@ -19,8 +19,14 @@ char *argstostr(int ac, char **av)
 
 	while (x < ac)
 	{
-		ch++;
-		y++;
+		while (av[x][y])
+		{
+			ch++;
+			y++;
+		}
+
+		y = 0;
+		x++;
 	}
 
 	s = malloc((sizeof(char) * ch) + ac + 1);
@@ -29,11 +35,11 @@ char *argstostr(int ac, char **av)
 	while (av[x])
 	{
 		while (av[x][y])
-	{
+		{
 		s[z] = av[x][y];
 		z++;
 		y++;
-	}
+		}
 
 		s[z] = '\n';
 
